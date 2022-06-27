@@ -1,6 +1,6 @@
 package org.example.data.types;
 
-public class J06Wrapper_classes {
+public class J06_Wrapper_classes {
     public static void main(String[] args) {
         int a = 123;
         Integer number = Integer.valueOf(a);
