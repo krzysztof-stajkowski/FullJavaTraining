@@ -1,6 +1,6 @@
 package org.example.data.types;
 
-public class j02_byte_short_int_long {
+public class J02_byte_short_int_long {
     public static void main(String[] args) {
         byte small = -127;
         short numShort = 32000;
