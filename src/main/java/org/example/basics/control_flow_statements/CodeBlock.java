@@ -1,6 +1,6 @@
 package org.example.basics.control_flow_statements;
 
-/**
+/*
 
  Bloki kodu grupują nam różnie instrukcje, również mogą zawierać wewnątrz inne bloki kodu. Inaczej mówiąc możemy je zagnieżdzać.
  Możemy wewnątrz deklarować jakieś zmienne natomiast musimy uważac na konflity nazw.
