@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class BufferedReader {
+
     public static void main(String[] args) throws IOException {
 
         java.io.BufferedReader reader = new java.io.BufferedReader(
@@ -16,4 +17,5 @@ public class BufferedReader {
         System.out.println("Twoje imie to: " + name);
 
     }
+
 }
