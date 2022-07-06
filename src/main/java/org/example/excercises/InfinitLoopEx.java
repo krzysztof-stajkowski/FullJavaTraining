@@ -3,7 +3,7 @@ package org.example.excercises;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.io.BufferedReader;
 
 public class InfinitLoopEx {
     public static void main(String[] args) throws IOException {
@@ -23,19 +23,19 @@ public class InfinitLoopEx {
      */
 
         //BŁĘDY!!!! DO NAPRAWY
-//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-//        int number = 0;
-//
-//        for ( ; ; ) {
-//            System.out.println("Wpisz liczbę lub quit jesli chcesz zakończyć program");
-//            String data = reader.readLine();
-//            if (data.equalsIgnoreCase("quit")) break;
-//
-//            int num = Integer.parseInt(data);
-//            number += num;
-//
-//            System.out.println("Wartość number: " + number);
-//        }
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int number = 0;
+
+        for ( ; ; ) {
+            System.out.println("Wpisz liczbę lub quit jesli chcesz zakończyć program");
+            String data = reader.readLine();
+            if (data.equalsIgnoreCase("quit")) break;
+
+            int num = Integer.parseInt(data);
+            number += num;
+
+            System.out.println("Wartość number: " + number);
+        }
 
     }
 }
