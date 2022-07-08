@@ -1,4 +1,4 @@
-package org.example.excercises;
+package org.example.excercises.FlowControl;
 
 public class DoWhile {
     public static void main(String[] args) {

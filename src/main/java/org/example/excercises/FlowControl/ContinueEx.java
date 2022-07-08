@@ -1,4 +1,4 @@
-package org.example.excercises;
+package org.example.excercises.FlowControl;
 
 public class ContinueEx {
     public static void main(String[] args) {

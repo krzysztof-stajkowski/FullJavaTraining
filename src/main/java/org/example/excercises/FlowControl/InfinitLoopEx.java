@@ -1,4 +1,4 @@
-package org.example.excercises;
+package org.example.excercises.FlowControl;
 
 
 import java.io.IOException;
@@ -22,7 +22,6 @@ public class InfinitLoopEx {
         na koniec każdej iteracji.
      */
 
-        //BŁĘDY!!!! DO NAPRAWY
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int number = 0;
 
