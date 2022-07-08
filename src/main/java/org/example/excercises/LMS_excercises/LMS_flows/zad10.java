@@ -32,6 +32,18 @@ public class zad10 {
             String row = "";//zmienna która jest zerowana na początku każdej iteracji,
             // przechowująca gwiazdki z wiersza
 
+            //OPCJONALNIE DO TRENINGU - wstaw continue przy n = 3 i break przy 9
+
+            if(i==3){
+                System.out.println("Continue na 4 wierszu");
+                continue;
+            }
+
+            if(i==9){
+                System.out.println("Przerwanie break na 8 przedostatnim wierszu");
+                break;
+            }
+
             //tworzymy pętlę generującą nam gwiazdki w wierszu
             for (int j = 0; j < n; j++) {
 
@@ -59,7 +71,7 @@ public class zad10 {
                     row += "* ";
                 }
             }
-            System.out.print(row + "\n");//wyświetlamy gwiazdki z wiersza i dodajemy znak nowej lini
+            System.out.print("Wiersz (" + i + ") " + row + "\n");//wyświetlamy gwiazdki z wiersza i dodajemy znak nowej lini
         }
     }
 }
