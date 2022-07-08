@@ -7,10 +7,17 @@ public class DoWhile {
         i wyświetl tylko i wyłącznie nieparzyste liczby.
          */
 
-        int i = 0;
+        int i = 1;
+
         do {
-            if (i % 2 != 0) System.out.println("Liczba " + i + " jest nieparzysta");
+
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
             i++;
+
         } while (i <= 20);
+
+
     }
 }

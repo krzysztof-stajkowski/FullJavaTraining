@@ -19,19 +19,28 @@ public class If3 {
 
         int points = 0;
         boolean driverLicense = true;
-        int experienceYears = 12;
+        int experienceYears = 10;
         boolean drunkDriving = false;
         boolean causedAccident = false;
-        boolean overSpeeding = true;
+        boolean overSpeeding = false;
+        int age = 62;
 
-        if (driverLicense == true) {
+        if (driverLicense) {
             points += 20;
         }
-        if (drunkDriving || causedAccident) points -= 100;
-        if (overSpeeding) points -= 10;
-        if (experienceYears >= 10) points += 20;
-        if (experienceYears > 60) points -= 20;
+        if (experienceYears >= 10) {
+            points += 20;
+        }
+        if (age > 60) {
+            points -= 20;
+        }
+        if (drunkDriving || causedAccident) {
+            points -= 100;
+        }
+        if (overSpeeding) {
+            points -= 10;
+        }
 
-        System.out.println("Ilość punktów: " + points);
+        System.out.println(points);
     }
 }

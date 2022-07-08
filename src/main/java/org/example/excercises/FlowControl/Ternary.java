@@ -10,10 +10,17 @@ public class Ternary {
             Pokaż informację o wyniku w konsoli.
          */
 
-        int number = 11;
-        String info = (number % 2 == 0) ? "parzysta": "nieparzysta";
+        int testNumber = 6;
 
-        System.out.println("Liczba " + number + " jest " + info);
+        int result = testNumber%2==0 ? 1 : 0;
+
+        if (result==1){
+            System.out.println("Parzysta");
+        }else{
+            System.out.println("Nieparzysta");
+        }
+
+
 
     }
 }

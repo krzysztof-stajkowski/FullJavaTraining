@@ -1,5 +1,8 @@
 package org.example.excercises.FlowControl;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Switch {
     public static void main(String[] args) {
         /*
@@ -13,34 +16,32 @@ public class Switch {
         12, 1, 2 - zima
          */
 
-        int monthNum = 5;
-        String season = "";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę od 1 do 12 dla pory roku");
+        String poraRoku = scanner.nextLine();
 
-        switch (monthNum) {
-            case 3:
-            case 4:
-            case 5:
-                season = "wiosna";
+
+        switch (Integer.parseInt(poraRoku)) {
+
+            case 1, 2, 12:
+                System.out.println("Zima");
                 break;
-            case 6:
-            case 7:
-            case 8:
-                season = "lato";
+
+            case 3, 4, 5:
+                System.out.println("Wiosna");
                 break;
-            case 9:
-            case 10:
-            case 11:
-                season = "jesień";
+
+            case 6, 7, 8:
+                System.out.println("Lato");
                 break;
-            case 12:
-            case 1:
-            case 2:
-                season = "zima";
+
+            case 9, 10, 11:
+                System.out.println("Jesień");
                 break;
             default:
-                season = "brak informacji";
+                System.out.println("Zły wpis");
+
         }
 
-        System.out.println("Numer miesiąca "+monthNum+" to pora roku: " + season);
     }
 }

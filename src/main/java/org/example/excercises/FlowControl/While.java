@@ -9,13 +9,15 @@ public class While {
         Pokaż każdy z wyników w konsoli.
          */
 
-        int numbers[] = { 1, 2, 3, 4, 5, 6 };
+        int tab[] = {1, 2, 3};
 
         int i = 0;
-        while (i < numbers.length) {
-            System.out.println( numbers[i] * 2 );
+
+        while (i < tab.length) {
+
+            System.out.println(tab[i]*2);
+
             i++;
         }
-
     }
 }

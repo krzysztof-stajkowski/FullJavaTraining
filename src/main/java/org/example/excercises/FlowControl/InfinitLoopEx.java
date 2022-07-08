@@ -1,9 +1,9 @@
 package org.example.excercises.FlowControl;
 
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.BufferedReader;
 
 public class InfinitLoopEx {
     public static void main(String[] args) throws IOException {
@@ -22,19 +22,26 @@ public class InfinitLoopEx {
         na koniec każdej iteracji.
      */
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int number = 0;
 
-        for ( ; ; ) {
-            System.out.println("Wpisz liczbę lub quit jesli chcesz zakończyć program");
-            String data = reader.readLine();
-            if (data.equalsIgnoreCase("quit")) break;
+        java.io.BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
-            int num = Integer.parseInt(data);
-            number += num;
+        for (; ; ) {
 
-            System.out.println("Wartość number: " + number);
+            System.out.println("Podaj liczbe");
+            String read = bf.readLine();
+
+            if (read.equalsIgnoreCase("q")) {
+                System.out.println("koniec");
+                break;
+            } else {
+
+                number += Integer.parseInt(read);
+                System.out.println("Suma dodanych: " + number);
+            }
+
         }
+
 
     }
 }

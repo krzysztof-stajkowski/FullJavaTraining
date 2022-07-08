@@ -1,5 +1,7 @@
 package org.example.excercises.FlowControl;
 
+import java.util.Scanner;
+
 public class If1 {
 
     public static void main(String[] args) {
@@ -12,17 +14,40 @@ public class If1 {
             Dla uproszczenia stosuj liczby całkowite.
          */
 
-        int age = 19;
-        int weight = 49;
+// zmienna final minimum wiek i waga
+        final int minWiek = 18;
+        final int minWaga = 50;
 
-        if (age >= 18) {
-            if (weight >= 50) {
-                System.out.println("Można oddać krew");
+//zmienna wiek
+        int wiek = 19;
+//zmienna waga
+        int waga = 51;
+//podaj wiek
+
+        Scanner scanner = new Scanner(System.in);
+        try {
+
+
+            System.out.println("Podaj wiek");
+            int age = Integer.parseInt(scanner.nextLine());
+            //jeśli wiek jest >=18 to...
+            if (age >= minWiek) {
+                System.out.println("Podaj wagę");
+                int weight = Integer.parseInt(scanner.nextLine());
+
+                if (weight < minWaga) {
+                    System.out.println("Waga musi być conajmniej 50");
+                    System.out.println("Nie kwalifikujesz się do pobrania krwi");
+                } else {
+                    System.out.println("Kwalifikujesz się do pobrania krwi");
+                }
+
             } else {
-                System.out.println("Kryterium wagi niespełnione");
+                System.out.println("Wiek musi być conajmniej 18");
+                System.out.println("Nie kwalifikujesz się do pobrania krwi");
             }
-        } else {
-            System.out.println("Wymóg wieku nie jest spełniony");
+        } catch (NumberFormatException e) {
+            System.out.println("Zły wpis");
         }
 
     }

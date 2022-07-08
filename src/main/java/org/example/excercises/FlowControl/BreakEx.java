@@ -9,9 +9,14 @@ public class BreakEx {
         break.
          */
 
-        for (int i = 0; i <= 50; i++) {
-            System.out.println(i);
-            if (i == 10) break;
+        for (int i = 1; i <= 50; i++) {
+
+            if (i == 10) {
+                break;
+            } else {
+                System.out.println(i);
+            }
+
         }
     }
 }

@@ -10,12 +10,16 @@ public class ContinueEx {
             Wyświetl wartość licznika po wykonaniu sprawdzenia.
          */
 
-        for (int i = 0; i <= 50; i++) {
-            if (i % 3 == 0) {
+        for (int i = 1; i <= 50 ; i++) {
+
+            if (i%3==0){
                 continue;
+            }else{
+                System.out.println(i);
             }
 
-            System.out.println(i);
         }
+
+
     }
 }

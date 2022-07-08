@@ -8,15 +8,19 @@ public class ForLoopExcercise {
             Użyj kolejnej pętli for aby pokazac elementy tablicy
             od końca do początku.
          */
-        String names[] = { "Ania", "Kasia", "Ola", "Olek", "Daniel" };
-        System.out.println("Imiona od początku:");
-        for (int i = 0; i < names.length; i++) {
-            System.out.println("i: " + i + " - " + names[i]);
+
+        int tab[] = {1,2,3};
+
+        for (int i = 0; i < tab.length ; i++) {
+            System.out.println(tab[i]);
+
         }
 
-        System.out.println("Imiona od końca");
-        for (int i = names.length - 1; i >= 0; i-- ) {
-            System.out.println("i: " + i + " - " + names[i]);
+        System.out.println("-----------");
+
+        for (int i = tab.length -1; i >= 0 ; i--) {
+            System.out.println(tab[i]);
+
         }
 
     }

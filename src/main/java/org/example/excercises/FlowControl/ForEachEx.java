@@ -9,13 +9,16 @@ public class ForEachEx {
             Sumę elementów zaprezentuj po pętli w konsoli.
          */
 
-        int numbers[] = { 0, 1, 2, 3, 4, 5 };
+int numbersArr[] = {0,1,2,3,4,5};
 
-        int sum = 0;
-        for (int i : numbers) {
-            sum += i;
+int sum = 0;
+
+        for (int x : numbersArr) {
+
+            sum += x;
+
         }
 
-        System.out.println("Suma liczb w tablicy to: " + sum);
+        System.out.println(sum);
     }
 }
