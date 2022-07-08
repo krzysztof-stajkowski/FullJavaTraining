@@ -32,7 +32,7 @@ public class zad10 {
             String row = "";//zmienna która jest zerowana na początku każdej iteracji,
             // przechowująca gwiazdki z wiersza
 
-            //OPCJONALNIE DO TRENINGU - wstaw continue przy n = 3 i break przy 9
+            //OPCJONALNIE DO TRENINGU - wstaw continue przy i = 3 i break przy 9
 
             if(i==3){
                 System.out.println("Continue na 4 wierszu");
