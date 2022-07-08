@@ -31,8 +31,6 @@ public class zad5 {
             resultWhile += j;
             j++;
         }
-
-
         System.out.println("ResultFor: " + resultFor);
         System.out.println("ResultWhile: " + resultWhile);
     }

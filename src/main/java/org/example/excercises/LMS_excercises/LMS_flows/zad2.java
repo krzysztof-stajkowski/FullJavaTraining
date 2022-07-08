@@ -28,7 +28,5 @@ public class zad2 {
             System.out.println("Największa z liczb to " + nr3);
 
         }
-
-
     }
 }

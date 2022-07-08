@@ -19,11 +19,10 @@ public class zad3 {
         System.out.println("----------");
 
         int j = 0;
-        while (j<3) {
+        while (j < 3) {
             System.out.println("Java while");
 
-        j++;
+            j++;
         }
-
     }
 }

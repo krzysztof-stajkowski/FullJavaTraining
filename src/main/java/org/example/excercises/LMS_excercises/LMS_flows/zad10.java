@@ -38,23 +38,23 @@ public class zad10 {
                 if (i == 0 && j != 0) {
                     row += j + 1 + " ";
                 } else if (i == 1 && j > 1) {
-                    row += j + 1+ " ";
+                    row += j + 1 + " ";
                 } else if (i == 2 && j > 2) {
-                    row += j + 1+ " ";
+                    row += j + 1 + " ";
                 } else if (i == 3 && j > 3) {
-                    row += j + 1+ " ";
+                    row += j + 1 + " ";
                 } else if ((i == 4 && j == 4) || ((i == 5 && j >= 0))) {
                     row += "* ";
                 } else if (i == 6 && j == 4) {
-                    row += j + 1+ " ";
+                    row += j + 1 + " ";
                 } else if (i == 7 && j > 3) {
-                    row += j + 1+ " ";
+                    row += j + 1 + " ";
                 } else if (i == 7 && j > 2) {
-                    row += j + 1+ " ";
+                    row += j + 1 + " ";
                 } else if (i == 8 && j > 1) {
-                    row += j + 1+ " ";
+                    row += j + 1 + " ";
                 } else if (i == 9 && j > 0) {
-                    row += j + 1+ " ";
+                    row += j + 1 + " ";
                 } else {
                     row += "* ";
                 }

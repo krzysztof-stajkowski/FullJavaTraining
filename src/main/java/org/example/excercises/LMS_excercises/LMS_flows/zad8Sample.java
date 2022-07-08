@@ -16,5 +16,4 @@ public class zad8Sample {
             System.out.print(row + "\n");//wyświetlamy gwiazdki z wiersza i dodajemy znak nowej lini
         }
     }
-
 }

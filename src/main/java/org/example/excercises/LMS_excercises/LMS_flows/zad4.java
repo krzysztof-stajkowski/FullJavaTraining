@@ -26,12 +26,11 @@ public class zad4 {
                 System.out.print(i + "\n");
             }
         }
-            int j = 1;
-            while (j <= 10) {
-                System.out.print(j + " ");
-                j++;
-            }
-
+        int j = 1;
+        while (j <= 10) {
+            System.out.print(j + " ");
+            j++;
         }
     }
+}
 

@@ -36,5 +36,4 @@ public class zad1 {
         System.out.println("Czy nr3 jest równy nr4? " + num2);
 
     }
-
 }

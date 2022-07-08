@@ -47,18 +47,18 @@ public class zad6 {
                 System.out.println(i + "- nieparzysta");
             }
         }
-            System.out.println("WHILE:");
+        System.out.println("WHILE:");
 
         int j = 0;
-            while(j<=n){
-                if (j % 2 == 0) {
-                    System.out.println(j + "- parzysta");
-                } else {
-                    System.out.println(j + "- nieparzysta");
-                }
-                j++;
+        while (j <= n) {
+            if (j % 2 == 0) {
+                System.out.println(j + "- parzysta");
+            } else {
+                System.out.println(j + "- nieparzysta");
             }
+            j++;
         }
     }
+}
 
 
