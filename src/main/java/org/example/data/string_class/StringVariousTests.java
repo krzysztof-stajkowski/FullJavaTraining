@@ -1,6 +1,6 @@
 package org.example.data.string_class;
 
-public class StringVariusTests {
+public class StringVariousTests {
     public static void main(String[] args) {
         String str = "Hello";
         String str2 = new String(" World");
@@ -19,5 +19,14 @@ public class StringVariusTests {
         StrB.substring(5);
         System.out.println(StrB.substring(5).trim().toUpperCase());
         System.out.println(StrB.substring(5).trim().toLowerCase());
+
+        System.out.println("string buffer: -------------");
+        StringBuffer StrBuffer = new StringBuffer("Hi StringBuffer");
+        int lenghtSB = StrBuffer.length();
+        StrBuffer.append(" " + lenghtSB);
+
+        System.out.println(StrBuffer);
+
+
     }
 }
