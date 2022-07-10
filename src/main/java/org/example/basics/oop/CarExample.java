@@ -8,6 +8,19 @@ class Car{
     String color;
     float topSpeed;
 
+    //constructor
+    public Car(String manufacturer, String name, String color, int year, float topSpeed){
+        this.manufacturer = manufacturer;
+        this.name = name;
+        this.year = year;
+        this.color = color;
+        this.topSpeed = topSpeed;
+    }
+
+    public Car(){
+        this.manufacturer = "unknown";
+    }
+
     //method
     public void printInfo() {
         System.out.println(this.manufacturer + " "
@@ -37,5 +50,9 @@ public class CarExample {
         chevrolet.topSpeed = 300.0f;
 
         chevrolet.printInfo();
+
+        Car dodge = new Car("Dodge","Viper","blue",1997,270.0f);
+        dodge.printInfo();
+
     }
 }
