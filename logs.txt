@@ -1,1 +1,2 @@
-Testuję logera
+
+Testuję error text

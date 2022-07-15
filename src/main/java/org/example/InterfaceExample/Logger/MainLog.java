@@ -9,5 +9,10 @@ public class MainLog {
         loggerC.log("Testuję logera");
         loggerF.log("Testuję logera");
 
+        //loguję błąd do pliku
+        loggerF.log("Testuję error text");
+
+
+
     }
 }

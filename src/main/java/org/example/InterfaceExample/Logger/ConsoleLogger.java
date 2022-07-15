@@ -8,4 +8,9 @@ public class ConsoleLogger implements Logger {
         //prosta implementacja
         System.out.println(text);
     }
+
+    @Override
+    public void error(String textEr) {
+        System.out.println(textEr);
+    }
 }

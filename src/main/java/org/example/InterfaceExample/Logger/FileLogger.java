@@ -22,4 +22,16 @@ public class FileLogger implements Logger{
         }
 
     }
+
+    @Override
+    public void error(String textEr) {
+        try{
+            File file = new File("logs.txt");
+            FileWriter writer = new FileWriter(file);
+            writer.write(textEr+"\n");
+            writer.close();
+        }catch (IOException e){
+            //ignore
+        }
+    }
 }

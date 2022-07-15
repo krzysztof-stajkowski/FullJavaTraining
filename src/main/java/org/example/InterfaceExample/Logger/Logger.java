@@ -4,6 +4,6 @@ public interface Logger {
 
     void log(String text);
 
-
+    void error(String textEr);
 
 }
