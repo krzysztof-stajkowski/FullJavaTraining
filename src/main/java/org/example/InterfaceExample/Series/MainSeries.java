@@ -24,6 +24,10 @@ public class MainSeries {
             System.out.println("Obiekt byThree: " + ob.getPrev());
         }
 
+        //możemy wywoływać bezpośrednio z interfejsu wartości z pól
+        System.out.println("Wartosć minimalna wywołana bezpośrednio z interfejsu Series wynosi: " + Series.MIN);
+        System.out.println(Series.exampleString);
+
 
     }
 }

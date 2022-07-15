@@ -9,9 +9,14 @@ public class byTwos implements Series {
         this.val = 0;
     }
 
+    //wykorzystanie zmiennej w interfejsie aby zablokowała mozliwość przekroczenia pewnej wartości
     @Override
     public int getNext() {
-        val += 2;
+       if(val>=MAX){
+           System.out.println(ERRORMSG);
+       }else{
+           val += 2;
+       }
         return val;
     }
 
