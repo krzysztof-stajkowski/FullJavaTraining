@@ -13,5 +13,11 @@ public class byThrees implements Series {
         val += 3;
         return val;
     }
+
+    @Override
+    public int getPrev() {
+        val -= 2;
+        return val;
+    }
 }
 

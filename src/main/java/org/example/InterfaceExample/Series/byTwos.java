@@ -14,4 +14,10 @@ public class byTwos implements Series {
         val += 2;
         return val;
     }
+
+    @Override
+    public int getPrev() {
+        val -= 3;
+        return val;
+    }
 }

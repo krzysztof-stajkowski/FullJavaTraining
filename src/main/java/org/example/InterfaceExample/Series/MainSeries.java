@@ -21,7 +21,7 @@ public class MainSeries {
             System.out.println("Obiekt byTwo: " + ob.getNext());
 
             ob = byThrees;
-            System.out.println("Obiekt byThree: " + ob.getNext());
+            System.out.println("Obiekt byThree: " + ob.getPrev());
         }
 
 
