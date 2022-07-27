@@ -2,7 +2,7 @@ package org.example.InterfaceExample.Series;
 
 public interface Series {
 
-    public static final int MAX = 10; // zmienne w interfejsie są zarówno finalne, statyczne (nie trzeba tworzyć obiektu) oraz publiczne co widać po wyszarzonych modifikatorach
+    public static final int MAX = 10; // zmienne w interfejsie są zarówno finalne, statyczne (nie trzeba tworzyć obiektu), jak i publiczne co widać po wyszarzonych modifikatorach
     String ERRORMSG = "Nie można powyżej warotości: " + MAX;
 
     int MIN = 1;

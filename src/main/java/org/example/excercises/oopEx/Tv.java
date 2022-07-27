@@ -26,8 +26,6 @@ class TvExample {
 
         telewizor1.printBasicData();
 
-
     }
-
 }
 
