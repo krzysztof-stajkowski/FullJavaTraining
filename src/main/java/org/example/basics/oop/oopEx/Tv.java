@@ -1,4 +1,4 @@
-package org.example.excercises.oopEx;
+package org.example.basics.oop.oopEx;
 
 public class Tv {
 

@@ -1,4 +1,4 @@
-package org.example.excercises.oopEx.shapes;
+package org.example.basics.oop.oopEx.shapes;
 
 public class MainShape {
     public static void main(String[] args) {

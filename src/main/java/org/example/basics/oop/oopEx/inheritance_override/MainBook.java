@@ -1,4 +1,4 @@
-package org.example.excercises.oopEx.inheritance_override;
+package org.example.basics.oop.oopEx.inheritance_override;
 
 public class MainBook {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example.excercises.oopEx.constructor_inheritance;
+package org.example.basics.oop.oopEx.constructor_inheritance;
 
 public class Child extends Parent { // Child dziedziczy konstruktor po rodzicu
 
