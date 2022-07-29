@@ -1,5 +1,6 @@
 package org.example.data.collections;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -21,10 +22,23 @@ public class ListExample {
         System.out.println(otherListWithNames.indexOf("Marek"));
         System.out.println(otherListWithNames.lastIndexOf("Marek"));
 
-        System.out.println("------------");
+        System.out.println("----For Each--------");
 
         for (String str : otherListWithNames){
             System.out.println(str);
+        }
+
+        System.out.println("-----Iterator-------");
+        //very old method - not used
+        Iterator iterator = otherListWithNames.iterator();
+
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+        System.out.println("-----For i-------");
+        for (int i = 0; i < otherListWithNames.size(); i++) {
+            System.out.println(otherListWithNames.get(i));
         }
 
     }
