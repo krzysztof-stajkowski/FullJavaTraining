@@ -27,5 +27,7 @@ public class MainTest {
         System.out.println(lola.hashCode());
         System.out.println(milky.hashCode());
 
+        System.out.println(catOwnerMap.get(susie));
+
     }
 }

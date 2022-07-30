@@ -35,9 +35,20 @@ public class Cat {
 
     //nadpisanie metody hashcode jako ZŁY nieoptymalny przykład
     //Jest to najgorsza możliwa implementacja tej metody jaka istnieje - zwraca zawsze 1 dla wszystkich instancji danej klasy
-    @Override
+  /*  @Override
     public int hashCode() {
         return 1;
     }
+*/
+    //poprawna implementacja
+    @Override
+    public int hashCode() {
+        int result = 7; // liczba 7 i 31 są wynikiem badań naukowych nad znalezieniem najwydajniejszych liczb w tym celu
+        result = 31 * result + name.hashCode();
+        result = 31 * result + age;
+        return result;
+    }
+
+
 
 }
