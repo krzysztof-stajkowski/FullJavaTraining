@@ -28,12 +28,16 @@ public class Cat {
             } else {
                 return false;
             }
-        }else {
+        } else {
             return false;
+        }
     }
-}
 
-//nadpisanie metody hashcode jako ZŁY nieoptymalny przykład
-
+    //nadpisanie metody hashcode jako ZŁY nieoptymalny przykład
+    //Jest to najgorsza możliwa implementacja tej metody jaka istnieje - zwraca zawsze 1 dla wszystkich instancji danej klasy
+    @Override
+    public int hashCode() {
+        return 1;
+    }
 
 }
