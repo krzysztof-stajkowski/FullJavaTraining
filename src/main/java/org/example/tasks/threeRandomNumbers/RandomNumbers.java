@@ -9,6 +9,7 @@ public class RandomNumbers {
         Random random = new Random();
         HashSet losoweLiczby = new HashSet<>();
 
+
         while(losoweLiczby.size() < 3){
             losoweLiczby.add(random.nextInt(10+1));
         }
