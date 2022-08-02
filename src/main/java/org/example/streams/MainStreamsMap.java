@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class MainStreams {
+public class MainStreamsMap {
     public static void main(String[] args) {
 
         //find 3 first numbers less than 10
