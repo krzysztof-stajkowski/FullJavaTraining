@@ -1,6 +1,6 @@
 package org.example.wzorceProjektowe;
 
-public class MainFactory { // method that creates objects
+public class MainFactory { // method that creates objects by hiding complex logic 
 
     public static void main(String[] args) {
       //  new Car(); //instancja obiektu - zamiast tego użyjemy metody createCar jako wzorzec Fabryka czyli metode która tworzy obiekty
