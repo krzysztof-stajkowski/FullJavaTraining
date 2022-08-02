@@ -28,4 +28,5 @@ public class WorkingWithStreams {
         Arrays.stream(tab);
 
     }
+
 }
