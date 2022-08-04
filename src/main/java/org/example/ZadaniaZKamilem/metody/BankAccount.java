@@ -78,6 +78,4 @@ public class BankAccount {
         System.out.println(acc2.toString());
 
     }
-
-
 }
