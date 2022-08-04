@@ -6,7 +6,7 @@ public class Animal {
     }
 
     void eat(){
-        System.out.println("Eat");
+        System.out.println("Eat eat eat");
     }
 
 }
