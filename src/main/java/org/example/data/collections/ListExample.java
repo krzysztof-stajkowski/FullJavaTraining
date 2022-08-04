@@ -28,7 +28,7 @@ public class ListExample {
             System.out.println(str);
         }
 
-        System.out.println("-----Iterator-------");
+        System.out.println("-----Iterators-------");
         //very old method - not used
         Iterator iterator = otherListWithNames.iterator();
 
