@@ -1,19 +1,19 @@
-package org.example.ZadaniaZKamilem;
+package org.example.ZadaniaZKamilem.konstruktory;
 
-public class KOT {
-    int size = 6;
-    String name = "Puszek";
+public class PIES {
+    int size = 10;
+    String name = "Azor";
 
-    public KOT(){}
+    public PIES(){}
 
-    public KOT(int size, String name) {
+    public PIES(int size, String name) {
         this.size = size;
         this.name = name;
     }
 
     @Override
     public String toString() {
-        return "KOT{" +
+        return "PIES{" +
                 "size=" + size +
                 ", name='" + name + '\'' +
                 '}';

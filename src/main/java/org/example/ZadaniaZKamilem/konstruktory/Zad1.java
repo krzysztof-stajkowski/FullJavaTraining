@@ -1,4 +1,4 @@
-package org.example.ZadaniaZKamilem;
+package org.example.ZadaniaZKamilem.konstruktory;
 
     class Cat {
         private String name;

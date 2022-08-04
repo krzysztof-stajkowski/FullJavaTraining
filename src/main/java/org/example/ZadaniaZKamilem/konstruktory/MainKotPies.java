@@ -1,4 +1,4 @@
-package org.example.ZadaniaZKamilem;
+package org.example.ZadaniaZKamilem.konstruktory;
 
 public class MainKotPies {
     public static void main(String[] args) {
