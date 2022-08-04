@@ -1,4 +1,4 @@
-package org.example.excercises.AnonimClass;
+package org.example.excercises.InnerClasses;
 
 public class Main {
 
@@ -19,9 +19,5 @@ public class Main {
         cat.eat();
         dog.eat();
 
-        Animal.PetToy petToy = cat.new PetToy(); // specjalny sposób odwołania się do metody w klasie wewnęrznej - na obiekcie / Bardzo rzadko używane
-        petToy.name = "Ball";
-        petToy.getName();
-        petToy.act();
     }
 }
