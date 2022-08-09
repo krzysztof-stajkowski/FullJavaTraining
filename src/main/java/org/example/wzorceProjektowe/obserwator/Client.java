@@ -26,6 +26,12 @@ public class Client{
         ytChannel.publishNewVideo();
         System.out.println("------------------");
 
+        YTUser ytUser3 = new YTUser("Jim");
+        ytChannel.register(ytUser3);
+        ytChannel.publishNewVideo();
+
+        System.out.println("------------------");
+
         ytChannel.unregister(ytUser);
         ytChannel.publishNewVideo();
         System.out.println("------------------");
