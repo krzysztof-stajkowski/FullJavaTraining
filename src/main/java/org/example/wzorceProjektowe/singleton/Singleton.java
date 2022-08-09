@@ -1,4 +1,4 @@
-package org.example.wzorceProjektowe;
+package org.example.wzorceProjektowe.singleton;
 
 public class Singleton { //jedna instancja obiektu nieważne ile razy bedzie wywołana metoda np. raz pobieramy plik 1GB. raz pobieramy bazę itp.
 

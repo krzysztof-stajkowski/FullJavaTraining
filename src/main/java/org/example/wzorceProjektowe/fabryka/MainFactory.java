@@ -1,4 +1,4 @@
-package org.example.wzorceProjektowe;
+package org.example.wzorceProjektowe.fabryka;
 
 public class MainFactory { // method that creates objects by hiding complex logic
 
