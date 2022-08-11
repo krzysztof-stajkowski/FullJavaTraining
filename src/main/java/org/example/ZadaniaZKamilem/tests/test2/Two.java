@@ -1,4 +1,6 @@
-package org.example.ZadaniaZKamilem.tests.test2.test1;
+package org.example.ZadaniaZKamilem.tests.test2;
+
+import org.example.ZadaniaZKamilem.tests.test2.One;
 
 public class Two extends One {
     public static void print(){

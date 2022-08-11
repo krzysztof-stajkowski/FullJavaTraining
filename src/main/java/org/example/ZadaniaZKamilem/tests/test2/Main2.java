@@ -1,4 +1,4 @@
-package org.example.ZadaniaZKamilem.tests.test2.test1;
+package org.example.ZadaniaZKamilem.tests.test2;
 
 public class Main2 {
     public static void main(String[] args) {
