@@ -6,6 +6,6 @@ public class B extends A {
 
     @Override
     protected void metoda() {
-        System.out.println(b);;
+        System.out.println(super.a + b);;
     }
 }
