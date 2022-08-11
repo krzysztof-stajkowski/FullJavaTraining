@@ -9,7 +9,7 @@ public class One {
         System.out.print("char constructor");
     }
 
-    void One(String str){
+     void One(String str){ //ten konstruktor nie zadziała /nawet jako public void
         System.out.print("String constructor");
     }
 }
