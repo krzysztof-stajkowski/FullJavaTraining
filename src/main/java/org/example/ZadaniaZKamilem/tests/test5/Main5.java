@@ -8,6 +8,16 @@ public class Main5 {
         Inter inter = new Four(); //to zadziała ponieważ inter tworzy obiekt z 4 który implementuje inter
         //Three three = new Four();
 
+        Inter inter2 = new Inter() {
+            @Override
+            public void sound() {
+                System.out.println("dzwięk z obiektu interfejs");
+            }
+        };
+
+        // Inter inter2 = () -> System.out.println("dzwięk z obiektu interfejs"); - to samo jako lambda
+        inter.sound();
+        inter2.sound();
 
     }
 }
