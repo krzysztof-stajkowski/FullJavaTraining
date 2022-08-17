@@ -5,5 +5,17 @@ public class Main3 {
         One one = new One();
         one.process();
 
+        Two two = new Two();
+        two.process2();
+
+        Test test = new Test() {
+            @Override
+            public void process2() {
+                process();
+            }
+        };
+
+        test.process2();
+
     }
 }

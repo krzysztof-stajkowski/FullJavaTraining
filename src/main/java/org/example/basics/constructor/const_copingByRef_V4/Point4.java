@@ -12,4 +12,5 @@ public class Point4 {
         this.x = x;
         this.y = y;
     }
+
 }
