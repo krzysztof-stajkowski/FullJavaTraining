@@ -1,4 +1,4 @@
-package org.example.restHttp;
+package org.example.restHttpclient;
 
 public class Post {
     private int id;

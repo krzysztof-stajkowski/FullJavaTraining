@@ -1,4 +1,4 @@
-package org.example.restHttp;
+package org.example.restHttpclient;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -25,7 +25,6 @@ public class RestApp {
                 .uri(URI.create(POSTS_API_URL))
                 .build();
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        //System.out.println(response.body());   //test czy zczytuje
 
         //parse JSON into objects
         ObjectMapper mapper = new ObjectMapper();
