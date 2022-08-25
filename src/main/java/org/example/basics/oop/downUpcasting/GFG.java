@@ -35,7 +35,7 @@ public class GFG {
         // Upcasting
         Parent p = new Child();
         p.name = "GeeksforGeeks";
-
+        // p.id nie ma takiej opcji aby mieć obiekt z child
 
         //Printing the parentclass name
         System.out.println(p.name);
