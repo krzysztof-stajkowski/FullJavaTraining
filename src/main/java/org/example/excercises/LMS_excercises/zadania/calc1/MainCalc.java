@@ -11,11 +11,9 @@ public class MainCalc {
         calc1.deduct(10,3);
         calc1.divide(30,5);
 
-        calc1.printHistory();
+        calc1.deleteFromHistory();
 
-        calc2.multiply(4,4);
-        calc2.deduct(33,3);
-        calc2.printHistory();
+
 
     }
 }

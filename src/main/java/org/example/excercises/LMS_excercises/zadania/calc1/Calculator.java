@@ -1,7 +1,10 @@
 package org.example.excercises.LMS_excercises.zadania.calc1;
 
+import javax.sound.midi.Soundbank;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Calculator {
 
@@ -50,7 +53,6 @@ public class Calculator {
     }
 
 
-
     private void history(String reString) {
         i++;
         calcHistList.add(i + ". " + reString);
@@ -63,5 +65,20 @@ public class Calculator {
         System.out.println("\n");
     }
 
+    public void deleteFromHistory() {
 
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj numer do usunięcia z poniższej historii:");
+        printHistory();
+       int index = scan.nextInt();
+
+        do {
+            calcHistList.remove(index);
+            System.out.println("\n Usunięto pozycję " + index);
+            printHistory();
+
+        } while (index > calcHistList.size() & index < 0);
+
+
+    }
 }
