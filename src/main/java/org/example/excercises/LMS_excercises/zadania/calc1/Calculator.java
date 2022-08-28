@@ -84,11 +84,9 @@ public class Calculator implements CalcInterface {
 
             koniec = true;
 
-            if (ContinueMath.equals(exit)) {
+            if (!ContinueMath.equalsIgnoreCase(exit)) {
                 System.out.println("Zakończono!");
                 koniec = false;
-                break;
-            } else if (!ContinueMath.equalsIgnoreCase(exit)) {
                 break;
             }
 
