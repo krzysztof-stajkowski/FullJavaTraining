@@ -1,19 +1,67 @@
 package org.example.excercises.LMS_excercises.zadania.calc1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Calculator {
 
-    private String[] calcHistory;
+    List calcHistList;
+    int i;
 
     public Calculator() {
-        this.calcHistory = new String[0];
+        calcHistList = new ArrayList<>();
     }
 
-    public String[] getCalcHistory() {
-        return calcHistory;
+    public double add(double num1, double num2) {
+
+        double result = num1 + num2;
+        String reString = String.format("%s dodać %s = %s", num1, num2, result);
+
+        history(reString);
+
+        return result;
     }
 
-    public void setCalcHistory(String[] calcHistory) {
-        this.calcHistory = calcHistory;
+    double deduct(double num1, double num2) {
+        double result = num1 - num2;
+        String reString = String.format("%s minus %s = %s", num1, num2, result);
+        history(reString);
+        return result;
     }
+
+    double multiply(double num1, double num2) {
+        double result = num1 * num2;
+        String reString = String.format("%s razy %s = %s", num1, num2, result);
+        history(reString);
+        return result;
+    }
+
+    double divide(double num1, double num2) {
+
+        if (num2 == 0) {// you should check j instead of i
+            throw new ArithmeticException("cannot Divide By 0");
+        }
+
+        double result = num1 / num2;
+        String reString = String.format("%s podzielić na %s = %s", num1, num2, result);
+        history(reString);
+
+        return result;
+    }
+
+
+
+    private void history(String reString) {
+        i++;
+        calcHistList.add(i + ". " + reString);
+    }
+
+    public void printHistory() {
+        for (Object s : calcHistList) {
+            System.out.println(s);
+        }
+        System.out.println("\n");
+    }
+
+
 }
-

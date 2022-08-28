@@ -4,10 +4,18 @@ public class MainCalc {
     public static void main(String[] args) {
 
         Calculator calc1 = new Calculator();
-        int length = calc1.getCalcHistory().length;
+        Calculator calc2 = new Calculator();
 
-        System.out.println("Size a. " + length);
-        System.out.println("Size b. " + calc1.getCalcHistory().length);
+        calc1.add(2, 3);
+        calc1.multiply(3,3);
+        calc1.deduct(10,3);
+        calc1.divide(30,5);
+
+        calc1.printHistory();
+
+        calc2.multiply(4,4);
+        calc2.deduct(33,3);
+        calc2.printHistory();
 
     }
 }
