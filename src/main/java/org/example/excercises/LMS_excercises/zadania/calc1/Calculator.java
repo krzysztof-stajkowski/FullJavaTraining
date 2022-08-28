@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Calculator implements CalcInterface{
+public class Calculator implements CalcInterface {
 
     List calcHistList;
     int incrementHistoryPos;
@@ -17,42 +17,88 @@ public class Calculator implements CalcInterface{
 
     public void doMath() {
 
-        System.out.println("Wybierz metodę arytmetyczną: \n" +
-                "1. Dodawanie\n" +
-                "2. Odejmowanie\n" +
-                "3. Mnożenie\n" +
-                "4. Dzielenie\n");
-        int chosenNumber =  scan.nextInt();
-
-        System.out.println("Podaj pierwszą liczbę do działania");
-        int firstNumber =  scan.nextInt();
-        System.out.println("Podaj drugą liczbę do działania");
-        int secondNumber =  scan.nextInt();
-
+        boolean koniec;
         do {
-            switch (chosenNumber){
 
-                case 1:
-                    add(firstNumber,secondNumber);
+            System.out.println("Wybierz metodę arytmetyczną: \n" +
+                    "1. Dodawanie\n" +
+                    "2. Odejmowanie\n" +
+                    "3. Mnożenie\n" +
+                    "4. Dzielenie\n");
+            int chosenNumber = scan.nextInt();
+
+            System.out.println("Podaj pierwszą liczbę do działania");
+            int firstNumber = scan.nextInt();
+            System.out.println("Podaj drugą liczbę do działania");
+            int secondNumber = scan.nextInt();
+
+            do {
+                switch (chosenNumber) {
+
+                    case 1:
+                        add(firstNumber, secondNumber);
+                        break;
+                    case 2:
+                        deduct(firstNumber, secondNumber);
+                        break;
+                    case 3:
+                        multiply(firstNumber, secondNumber);
+                        break;
+                    case 4:
+                        divide(firstNumber, secondNumber);
+                        break;
+                }
+
+            } while (chosenNumber > 4 & chosenNumber < 0);
+
+            System.out.println("\nCzy chcesz wyświetlić historię kalkulacji? (Y/N)");
+
+            String exit = "y";
+
+            do {
+                System.out.println("Wpisz y lub n");
+                String histYesNo = scan.next();
+
+                if (histYesNo.equalsIgnoreCase(exit)) {
+                    printHistory();
                     break;
-                case 2:
-                    deduct(firstNumber,secondNumber);
+                } else if (!histYesNo.equalsIgnoreCase(exit)) {
                     break;
-                case 3:
-                    multiply(firstNumber,secondNumber);
+                }
+            } while (scan.nextLine() != "y" || scan.nextLine() != "n");
+
+            System.out.println("\nCzy chcesz usunąć pozycję z historii kalkulacji? (Y/N)");
+            String deletePosYesNo = scan.next();
+
+            do {
+                if (deletePosYesNo.equals(exit)) {
+                    deleteFromHistory();
                     break;
-                case 4:
-                    divide(firstNumber,secondNumber);
+                } else if (!deletePosYesNo.equalsIgnoreCase(exit)) {
                     break;
+                }
+            } while (scan.nextLine() != "y" || scan.nextLine() != "n");
+
+            System.out.println("Czy chcesz kontynuować? (Y/N)");
+            String ContinueMath = scan.next();
+
+            koniec = true;
+
+            if (ContinueMath.equals(exit)) {
+                System.out.println("Zakończono!");
+                koniec = false;
+                break;
+            } else if (!ContinueMath.equalsIgnoreCase(exit)) {
+                break;
             }
 
-        } while (chosenNumber > 4 & chosenNumber < 0);
+        } while (koniec = false);
+    } //koniec metody
 
 
-    }
     @Override
     public double add(double num1, double num2) {
-        double result =  num1 + num2;
+        double result = num1 + num2;
         String reString = String.format("%s dodać %s = %s", num1, num2, result);
 
         history(reString);
