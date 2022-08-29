@@ -90,15 +90,20 @@ public class Calculator implements CalcInterface {
                 break;
             }
 
-        } while (koniec = false);
+        } while (koniec = true);
     } //koniec metody
 
+
+    @Override
+    public void final_info() {
+        CalcInterface.super.final_info();
+    }
 
     @Override
     public double add(double num1, double num2) {
         double result = num1 + num2;
         String reString = String.format("%s dodać %s = %s", num1, num2, result);
-
+        final_info();
         history(reString);
         System.out.println(reString);
         return result;
@@ -108,6 +113,7 @@ public class Calculator implements CalcInterface {
     public double deduct(double num1, double num2) {
         double result = num1 - num2;
         String reString = String.format("%s minus %s = %s", num1, num2, result);
+        final_info();
         history(reString);
         System.out.println(reString);
         return result;
@@ -117,6 +123,7 @@ public class Calculator implements CalcInterface {
     public double multiply(double num1, double num2) {
         double result = num1 * num2;
         String reString = String.format("%s razy %s = %s", num1, num2, result);
+        final_info();
         history(reString);
         System.out.println(reString);
         return result;
@@ -131,6 +138,7 @@ public class Calculator implements CalcInterface {
 
         double result = num1 / num2;
         String reString = String.format("%s podzielić na %s = %s", num1, num2, result);
+        final_info();
         history(reString);
         System.out.println(reString);
         return result;
