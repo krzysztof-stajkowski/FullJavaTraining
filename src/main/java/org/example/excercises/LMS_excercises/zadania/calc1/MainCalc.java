@@ -7,10 +7,5 @@ public class MainCalc {
 
         calc1.doMath();
 
-
-
-
-
-
     }
 }
