@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Calculator implements CalcInterface {
+public class Calculator extends CalcHistory implements CalcInterface {
 
     List calcHistList;
     int incrementHistoryPos;
@@ -29,19 +29,19 @@ public class Calculator implements CalcInterface {
             double firstNumber;
             double secondNumber;
 
-                System.out.println("Podaj pierwszą liczbę");
-                while (!scan.hasNextDouble()) {
-                    System.out.println("Podaj poprawną liczbę");
-                    scan.next();
-                }
-                firstNumber = scan.nextDouble();
+            System.out.println("Podaj pierwszą liczbę");
+            while (!scan.hasNextDouble()) {
+                System.out.println("Podaj poprawną liczbę");
+                scan.next();
+            }
+            firstNumber = scan.nextDouble();
 
-                System.out.println("Podaj drugą liczbę");
-                while (!scan.hasNextDouble()) {
-                    System.out.println("Podaj poprawną liczbę");
-                    scan.next();
-                }
-                secondNumber = scan.nextDouble();
+            System.out.println("Podaj drugą liczbę");
+            while (!scan.hasNextDouble()) {
+                System.out.println("Podaj poprawną liczbę");
+                scan.next();
+            }
+            secondNumber = scan.nextDouble();
 
             do {
                 switch (chosenNumber) {
@@ -154,11 +154,13 @@ public class Calculator implements CalcInterface {
     }
 
 
-    private void history(String reString) {
+    @Override
+    public void history(String reString) {
         incrementHistoryPos++;
         calcHistList.add(incrementHistoryPos + ". " + reString);
     }
 
+    @Override
     public void printHistory() {
         for (Object s : calcHistList) {
             System.out.println(s);
@@ -166,6 +168,7 @@ public class Calculator implements CalcInterface {
         System.out.println("\n");
     }
 
+    @Override
     public void deleteFromHistory() {
 
         System.out.println("Podaj numer do usunięcia z poniższej historii:");
