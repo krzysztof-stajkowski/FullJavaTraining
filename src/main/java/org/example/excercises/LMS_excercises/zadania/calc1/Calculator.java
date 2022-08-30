@@ -132,7 +132,7 @@ public class Calculator implements CalcInterface {
     @Override
     public double divide(double num1, double num2) {
 
-        if (num2 == 0) {// you should check j instead of i
+        if (num2 == 0) {
             System.out.println("Nie można dzielić przez 0");
             return 0;
         }
