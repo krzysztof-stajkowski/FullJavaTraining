@@ -7,6 +7,8 @@ public interface CalcInterface {
         System.out.println("Wynik działania: ");
     }
 
+
+
     double add(double num1, double num2);
 
     double deduct(double num1, double num2);

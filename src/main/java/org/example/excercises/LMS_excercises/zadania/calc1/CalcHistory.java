@@ -1,13 +1,10 @@
 package org.example.excercises.LMS_excercises.zadania.calc1;
 
-public class CalcHistory {
+public abstract class CalcHistory {
 
-    public void history(String reString) {
-    }
+    public abstract void history(String reString);
 
-    public void printHistory() {
-    }
+    public abstract void printHistory();
 
-    public void deleteFromHistory() {
-    }
+    public abstract void deleteFromHistory();
 }
