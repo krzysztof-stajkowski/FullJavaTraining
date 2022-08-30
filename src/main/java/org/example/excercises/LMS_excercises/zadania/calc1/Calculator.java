@@ -102,7 +102,7 @@ public class Calculator implements CalcInterface {
                 break;
             }
 
-        } while (koniec = true);
+        } while (koniec == true);
     } //koniec metody
 
 
