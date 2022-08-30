@@ -2,6 +2,7 @@ package org.example.excercises.LMS_excercises.zadania.calc1;
 
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -27,10 +28,22 @@ public class Calculator implements CalcInterface {
                     "4. Dzielenie\n");
             int chosenNumber = scan.nextInt();
 
-            System.out.println("Podaj pierwszą liczbę do działania");
-            int firstNumber = scan.nextInt();
-            System.out.println("Podaj drugą liczbę do działania");
-            int secondNumber = scan.nextInt();
+            double firstNumber;
+            double secondNumber;
+
+                System.out.println("Podaj pierwszą liczbę");
+                while (!scan.hasNextDouble()) {
+                    System.out.println("Podaj poprawną liczbę");
+                    scan.next();
+                }
+                firstNumber = scan.nextDouble();
+
+                System.out.println("Podaj drugą liczbę");
+                while (!scan.hasNextDouble()) {
+                    System.out.println("Podaj poprawną liczbę");
+                    scan.next();
+                }
+                secondNumber = scan.nextDouble();
 
             do {
                 switch (chosenNumber) {
