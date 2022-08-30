@@ -17,7 +17,6 @@ public class Calculator implements CalcInterface {
 
     public void doMath() {
 
-        boolean koniec;
         do {
 
             System.out.println("Wybierz metodę arytmetyczną: \n" +
@@ -94,15 +93,12 @@ public class Calculator implements CalcInterface {
             System.out.println("Czy chcesz kontynuować? (Y/N)");
             String ContinueMath = scan.next();
 
-            koniec = true;
-
             if (!ContinueMath.equalsIgnoreCase(exit)) {
                 System.out.println("Zakończono!");
-                koniec = false;
                 break;
             }
 
-        } while (koniec == true);
+        } while (true);
     } //koniec metody
 
 
