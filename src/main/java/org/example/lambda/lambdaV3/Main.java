@@ -11,7 +11,7 @@ public class Main {
     }
 
 
-    static void printThings(Printable thing) { //obiekt z interfejsu funkcyjnego dletego możemy w tej metodzie wywołać metodę z niego
+    static void printThings(Printable thing) { //obiekt z interfejsu funkcyjnego dlatego możemy w tej metodzie wywołać metodę z niego
         thing.print("!");
     }
 
