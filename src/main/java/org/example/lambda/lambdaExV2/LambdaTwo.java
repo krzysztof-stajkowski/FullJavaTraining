@@ -29,7 +29,7 @@ public class LambdaTwo {
 
     }
 
-    static void printThing(Printable thing) {
+    static void printThing(Printable thing) { //obiekt z interfejsu funkcyjnego dletego możemy w tej metodzie wywołać metodę z niego
         thing.print();
     }
 
