@@ -1,18 +1,23 @@
 package org.example;
 
 
-import java.math.BigDecimal;
-
 public class Test {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
+        Test t = new Test();
+        t.method1();
+    }
 
-        int a = 0;
-        while(a <= 10){
-            a++;
+    public void method1(){
+        method2();
+    }
+
+    public void method2(){
+        try{
+            throw new NullPointerException();
+        }catch(NullPointerException e){
+            throw e;
         }
-        System.out.println(a);
     }
 }
-
